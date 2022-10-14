@@ -1,10 +1,6 @@
 let's first create a fission namespace
 
 ```
-kubectl create namespace fission
-```{{execute}}
-
-```
 kubectl create -k "github.com/fission/fission/crds/v1?ref=v1.17.0"
 ```{{execute}}
 
