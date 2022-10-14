@@ -1,29 +1,32 @@
-# Step 1 - Let's create an environment
+let's first create a fission namespace
 
 ```
-fission env create --name node --image fission/node-env
+kubectl create namespace fission
 ```{{execute}}
 
-Now let's create a function in NodeJS
-Copy and paste the below code in hello.js file
-
 ```
-module.exports = async function(context) {
-    return {
-        status: 200,
-        body: "Hello, world!\n"
-    };
-}
-```{{copy}}
-
-Now let's create this function on our cluster
-
-```
-fission fn create --name hello --code hello.js --env node
+kubectl create -k "github.com/fission/fission/crds/v1?ref=v1.17.0"
 ```{{execute}}
 
-Let’s create a route for the function
+```
+export FISSION_NAMESPACE="fission"
+```{{execute}}
 
 ```
-fission route create --function hello --url /hello --name hello
+kubectl create namespace $FISSION_NAMESPACE
+```{{execute}}
+
+```
+kubectl config set-context --current --namespace=$FISSION_NAMESPACE
+```{{execute}}
+
+```
+kubectl apply -f https://github.com/fission/fission/releases/download/v1.17.0/fission-all-v1.17.0-minikube.yaml
+```{{execute}}
+
+# Let's install fission Cli
+
+```
+curl -Lo fission https://github.com/fission/fission/releases/download/v1.17.0/fission-v1.17.0-linux-amd64 \
+    && chmod +x fission && sudo mv fission /usr/local/bin/
 ```{{execute}}
