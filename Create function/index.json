@@ -1,0 +1,27 @@
+{
+    "title": "Create a function",
+    "description": "Learn how to easily create a function using fission",
+    "difficulty": "Beginner",
+    "time": "10-15 Minutes",
+    "details": {
+      "steps": [
+        {
+          "title": "Create an environment and function",
+          "text": "step1.md"
+        },
+        {
+          "title": "Let's setup function router",
+          "text": "step2.md",
+          "verify": "step2-verify.sh"
+        }
+      ],
+      "intro": {
+        "text": "intro.md",
+        "courseData": "courseBase.sh",
+        "credits": "https://fission.io/"
+      } 
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
