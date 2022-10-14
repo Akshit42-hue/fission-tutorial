@@ -6,18 +6,17 @@
     "steps": [
       {
         "title": "Configuring Initial Prometheus Server",
-        "text": "step1.md",
-        "verify": "step1-verify.sh"
+        "text": "step1.md"
+        
       },
       {
         "title": "Thanos Sidecars",
-        "text": "step2.md",
-        "verify": "step2-verify.sh"
+        "text": "step2.md"
+       
       },
       {
         "title": "Thanos Store Gateway",
-        "text": "step3.md",
-        "answer": "step3-answer.md"
+        "text": "step3.md"
       }
      
     ],
