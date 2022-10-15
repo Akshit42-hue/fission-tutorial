@@ -7,7 +7,6 @@
       {
         "title": "Configuring Initial Prometheus Server",
         "text": "step1.md"
-        
       },
       {
         "title": "Thanos Sidecars",
