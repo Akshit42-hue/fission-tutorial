@@ -1,8 +1,8 @@
-# Step 2 - Setup Fission router environment variable 
+# Step 3 - Setup Fission router environment variable 
 
 ```
 export FISSION_ROUTER=$(kubernetes ip):$(kubectl -n fission get svc router -o jsonpath='{...nodePort}')
-```{{excute}}
+```{{execute}}
 
 Now let's curl our function
 

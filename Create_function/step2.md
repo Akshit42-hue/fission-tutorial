@@ -1,4 +1,4 @@
-# Step 1 - Let's create an environment
+# Step 2 - Let's create an environment
 
 ```
 fission env create --name node --image fission/node-env

@@ -1,3 +1,5 @@
+# Step 1 - Let's install fission and fission cli
+
 let's first create a fission namespace
 
 ```
