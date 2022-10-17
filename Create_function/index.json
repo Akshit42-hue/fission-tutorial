@@ -1,20 +1,19 @@
 {
-  "title": "Intro: Downsampling and unlimited metric retention for Prometheus",
-  "description": "Learn how to extend your metric retention in a cheap and easy way with Thanos.",
+  "title": "Create a function using fission",
   "difficulty": "Moderate",
   "details": {
     "steps": [
       {
-        "title": "Configuring Initial Prometheus Server",
+        "title": "Let's install the fission and fission Cli",
         "text": "step1.md"
       },
       {
-        "title": "Thanos Sidecars",
+        "title": "Create an environment",
         "text": "step2.md"
        
       },
       {
-        "title": "Thanos Store Gateway",
+        "title": "Set-up Fission router",
         "text": "step3.md"
       }
      

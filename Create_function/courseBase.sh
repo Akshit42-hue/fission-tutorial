@@ -6,4 +6,4 @@ docker pull fission/builder
 kubernetes-kubeadm-2nodes
 
 
-mkdir /root/hello.js
+
