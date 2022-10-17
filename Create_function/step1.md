@@ -1,4 +1,4 @@
-# Step 1 - Let's install fission and fission cli
+# Step 1 - Let's install fission and fissiont cli
 
 let's first create a fission namespace
 
